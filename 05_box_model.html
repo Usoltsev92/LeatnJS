@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Базовые настройки документа -->
+  <meta charset="UTF-8"> <!-- Кодировка документа -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Режим совместимости для IE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптивность для мобильных -->
+  <title>Box Model</title> <!-- Заголовок страницы -->
+  <style>
+    /* Сброс стандартных отступов для всех элементов */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Основные стили страницы */
+    body {
+      margin: 0; /* Убираем внешние отступы у body */
+    }
+
+    /* Контейнер для контента */
+    .container {
+      max-width: 750px; /* Максимальная ширина контейнера */
+      margin: auto; /* Центрирование контейнера по горизонтали */
+    }
+
+    /* Стили для блока .box */
+    .box {
+      background: darkorchid; /* Фиолетовый фон */
+      color: #fff; /* Белый текст */
+
+      /* Варианты задания внутренних отступов (закомментированы) */
+      /* padding: 15px; */ /* Все стороны */
+      /* padding: 15px 40px; */ /* Вертикальные | Горизонтальные */
+      /* padding: 15px 40px 25px 30px; */ /* Верх | Право | Низ | Лево */
+      
+      /* Отдельные свойства padding (закомментированы) */
+      /* padding-top: 15px; */
+      /* padding-right: 40px;
+      padding-bottom: 25px;
+      padding-left: 30px; */
+      
+      padding: 15px; /* Внутренние отступы со всех сторон */
+
+      border: 4px solid red; /* Граница: толщина 4px, сплошная, красная */
+
+      margin: 10px; /* Внешние отступы со всех сторон */
+      margin-bottom: 20px; /* Дополнительный отступ снизу */
+    }
+
+    /* Контейнер для блоков */
+    .blocks {
+      width: 100%; /* Занимает всю доступную ширину */
+    }
+
+    /* Стили для отдельных блоков */
+    .blocks .block {
+      width: 25%; /* Ширина 25% от родителя (4 блока в ряд) */
+      background: #000; /* Черный фон */
+      height: 50px; /* Фиксированная высота */
+      float: left; /* Обтекание слева (для горизонтального расположения) */
+      border: 4px solid green; /* Граница: толщина 4px, сплошная, зеленая */
+      box-sizing: border-box; /* Границы включаются в расчет ширины */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Основной контент страницы -->
+  <div class="container">
+    <!-- Первый блок -->
+    <div class="box">
+      <h2>Box Model</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, facere?</p>
+    </div>
+  
+    <!-- Второй блок -->
+    <div class="box">
+      <h2>Box Model</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, facere?</p>
+    </div>
+  </div>
+  
+  <!-- Блоки с float -->
+  <div class="blocks">
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+  </div>
+
+</body>
+</html>

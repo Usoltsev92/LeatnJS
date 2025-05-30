@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Базовые настройки документа -->
+  <meta charset="UTF-8"> <!-- Кодировка UTF-8 для поддержки всех символов -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Режим совместимости с последними версиями IE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптивный viewport -->
+  <title>CSS Course</title> <!-- Заголовок страницы -->
+  
+  <style>
+    /* Базовые стили страницы */
+    body {
+      background: #ddd; /* Серый фон всей страницы */
+    }
+  </style>
+  
+  <!-- Подключение внешних CSS-файлов -->
+  <link rel="stylesheet" href="01_selectors.css"> <!-- Стили для селекторов -->
+  <link rel="stylesheet" href="02_fonts.css"> <!-- Стили для шрифтов -->
+  <link rel="stylesheet" href="03_colors.css"> <!-- Стили для цветов -->
+  <link rel="stylesheet" href="04_borders.css"> <!-- Стили для границ -->
+  <link rel="stylesheet" href="06_links.css"> <!-- Стили для ссылок -->
+  <link rel="stylesheet" href="07_lists.css"> <!-- Стили для списков -->
+  <link rel="stylesheet" href="08_display.css"> <!-- Стили для display-свойств -->
+  <link rel="stylesheet" href="09_positions.css"> <!-- Стили для позиционирования -->
+</head>
+<body>
+
+<!-- Навигационное меню -->
+<nav class="navbar">
+  <ul>
+    <li><a href="#">Item 1</a></li>
+    <li><a href="#">Item 2</a></li>
+    <li><a href="#">Item 3</a></li>
+    <li><a href="#">Item 4</a></li>
+    <li><a href="#">Item 5</a></li>
+  </ul>
+</nav>
+  
+<!-- Шапка сайта с inline-стилем -->
+<header id="header" style="border: 1px solid grey;">
+  <h3>Это очень крутой сайт!</h3>
+</header>
+
+<!-- Карточка с HTML-контентом -->
+<div class="card html">
+  <h2>HTML</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ipsum?</p>
+</div>
+
+<!-- Карточка для демонстрации позиционирования -->
+<div class="card">
+  <h2>Positions</h2>
+  <div class="playground">
+    <div class="pos-box"></div> <!-- Блок для демонстрации позиционирования -->
+  </div>
+</div>
+
+<!-- Карточка для демонстрации display-свойств -->
+<div class="card">
+  <h2>Display</h2>
+
+  <!-- Список с inline-элементами -->
+  <ul class="inline">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+
+  <!-- Блоки для демонстрации inline-block -->
+  <div class="box">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quibusdam!
+  </div>
+  <div class="box">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quibusdam!
+  </div>
+  <div class="box">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quibusdam!
+  </div>
+
+  <!-- Изображение с block-отображением -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/160px-HTML5_logo_and_wordmark.svg.png" alt="html" class="img">
+</div>
+
+<!-- Карточка с CSS-контентом -->
+<div class="card css">
+  <h2>CSS</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ipsum?</p>
+</div>
+
+<!-- Карточка для демонстрации списков и таблиц -->
+<div class="card">
+  <h2>Lists & Tables</h2>
+
+  <!-- Неупорядоченный список -->
+  <ul class="list">
+    <li>Lorem, ipsum.</li>
+    <li>Aperiam, tenetur.</li>
+    <li>Impedit, ut?</li>
+    <li>Magnam, repudiandae.</li>
+    <li>Repellendus, cumque!</li>
+  </ul>
+
+  <!-- Таблица для демонстрации табличных стилей -->
+  <table class="table">
+    <!-- 6 строк по 5 ячеек в каждой -->
+    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+  </table>
+</div>
+
+<!-- Карточка для демонстрации ссылок и кнопок -->
+<div class="card">
+  <h2>Links & Buttons</h2>
+
+  <p>
+    <a href="#" class="btn">Это очень важная ссылка</a> <!-- Стилизованная ссылка -->
+  </p>
+
+  <p>
+    <button class="btn">Это кнопка!</button> <!-- Стилизованная кнопка -->
+  </p>
+</div>
+
+<!-- Карточка для демонстрации цветов -->
+<div class="card">
+  <h2>Colors</h2>
+
+  <!-- Заголовки с разными цветовыми классами -->
+  <h3 class="color-1">Color 1</h3>
+  <h3 class="color-2">Color 2</h3>
+  <h3 class="color-3">Color 3</h3>
+  <h3 class="color-4">Color 4</h3>
+  <h3 class="color-5">Color 5</h3>
+</div>
+
+<!-- Карточка для демонстрации границ -->
+<div class="card">
+  <h2>Borders</h2>
+
+  <!-- Параграфы с разными стилями границ -->
+  <p class="border-1">Lorem ipsum dolor sit amet.</p>
+  <p class="border-2">Lorem ipsum dolor sit amet.</p>
+  <p class="border-3">Lorem ipsum dolor sit amet.</p>
+
+  <!-- Круг для демонстрации border-radius -->
+  <div class="circle"></div>
+</div>
+
+</body>
+</html>

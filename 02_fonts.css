@@ -1,0 +1,42 @@
+/* Подключение шрифта Roboto с Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  /* Запасные шрифты (закомментированы, сейчас не используются) */
+  /* font-family: Vedana, Geneva, sans-serif; */
+  
+  /* Основной шрифт - Roboto с запасным sans-serif */
+  font-family: 'Roboto', sans-serif;
+  
+  /* Размер шрифта */
+  font-size: 18px;
+  
+  /* Высота строки (интерлиньяж) */
+  line-height: 1.6em;
+  
+  /* Насыщенность шрифта (normal = 400) */
+  font-weight: normal;
+  
+  /* Альтернативная краткая запись свойств шрифта (закомментирована) */
+  /* font: normal 25px 'Roboto', sans-serif; */
+  /* где: font-style font-weight font-size/line-height font-family */
+  
+  /* Декорация текста (закомментирована) */
+  /* text-decoration: line-through; */ /* Перечёркнутый текст */
+  
+  /* Стиль шрифта (закомментирован) */
+  /* font-style: italic; */ /* Курсивное начертание */
+  
+  /* Расстояние между буквами (закомментировано) */
+  /* letter-spacing: 2px; */
+  
+  /* Расстояние между словами (закомментировано) */
+  /* word-spacing: 20px; */
+}
+
+/* Стили для параграфов внутри элементов с классом .css (закомментированы) */
+/* .css p { */
+  /* font-family: Vedana; */
+  /* font-size: 20px; */
+  /* font-weight: bold; */ /* Жирное начертание */
+/* } */

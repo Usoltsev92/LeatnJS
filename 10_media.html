@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Базовые настройки документа -->
+  <meta charset="UTF-8"> <!-- Кодировка UTF-8 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Режим совместимости с IE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Важно для адаптивности -->
+  <title>Media</title> <!-- Заголовок страницы -->
+  <style>
+    /* Основной контейнер для контента */
+    .container {
+      max-width: 750px;    /* Максимальная ширина контейнера */
+      padding-top: 20px;    /* Отступ сверху */
+      margin: auto;         /* Автоматические отступы по бокам (центрирование) */
+    }
+
+    /* Стили блока с контентом */
+    .box {
+      padding: 20px;        /* Внутренние отступы */
+      background: #eee;     /* Светло-серый фон */
+      font-size: 2rem;      /* Крупный размер шрифта (примерно 32px) */
+    }
+
+    /* Медиазапрос для экранов шириной до 500px */
+    @media (max-width: 500px) {
+      .box {
+        font-size: 1.5rem;  /* Уменьшенный размер шрифта для мобильных */
+        padding: 10px;      /* Меньшие отступы */
+        text-align: center; /* Центрирование текста */
+      }
+    }
+    /* 
+      Другие возможные медиазапросы:
+      @media (min-width: 768px) - для планшетов
+      @media (min-width: 992px) - для десктопов
+      @media (orientation: landscape) - для альбомной ориентации
+    */
+  </style>
+</head>
+<body>
+  <!-- Основная структура страницы -->
+  <div class="container">
+    <!-- Блок с контентом -->
+    <div class="box">
+      Это урок про адаптивную верстку
+    </div>
+  </div>
+</body>
+</html>
